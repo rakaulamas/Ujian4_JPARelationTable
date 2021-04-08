@@ -8,6 +8,5 @@ import com.jpa.relation.entity.Mahasiswa;
 public interface MahasiswaRepo extends JpaRepository<Mahasiswa, Long>{
 		
 	public Mahasiswa findByNamaMahasiswa(String name);
-	
 	public Mahasiswa findByIdMahasiswa(Long id);
 }
