@@ -20,7 +20,9 @@ import lombok.NoArgsConstructor;
 @Table(name="admin")
 public class Admin {
 	@Id
-	private String name;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long idAdmin;
+	private String username;
 	private String password;
 
 

@@ -25,10 +25,8 @@ import lombok.NoArgsConstructor;
 public class Nilai {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_soal; 
-	private int nilai;
+	private long idNilai; 
+	private String nilai;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "id_soal", referencedColumnName ="id_soal")
-	private List<Pertanyaan> pertanyaan = new ArrayList<Pertanyaan>(); 	
+	 	
 }

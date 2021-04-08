@@ -28,30 +28,11 @@ import lombok.NoArgsConstructor;
 public class Dosen {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_dosen; 
+	private long idDosen; 
 	private String username;
 	private String password;
-	private String nama_dosen;
+	private String namaDosen;
 
-	//	dari Mahasiswa-Dosen
-	@ManyToMany(mappedBy = "dosen")
-	private Set<Mahasiswa> mahasiswa = new HashSet<Mahasiswa>();
-	
-	
-					//Tabel Dosen - Matakuliah
-	
-	@ManyToMany(cascade= CascadeType.ALL)
-	@JoinTable(
-			name="Plot Mata Kuliah",
-			joinColumns = { 
-					
-					@JoinColumn(name="dosen_id", referencedColumnName="id_dosen")},
-					
-			inverseJoinColumns= { 
-					@JoinColumn(name = "matkul_id", referencedColumnName="id_matkul")}	)
-	
-		
-		private Set<Dosen> dosen = new HashSet<Dosen>();
 	
 	
 	

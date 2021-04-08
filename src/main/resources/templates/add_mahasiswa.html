@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Mahasiswa</title>
+
+</head>
+<body>
+
+<H1>Input Mahasiswa </H1>
+
+<form action="#" th:action="@{/mahasiswa/view}" th:object="${mahasiswa}" method="post">
+
+<div class="mb-3">
+  <label for="nim" class="form-label">NIM</label>
+  <input type="text" class="form-control" id="nim" placeholder="NIM Mahasiswa" th:field="*{nim}">
+</div>
+
+<div class="mb-3">
+  <label for="nama" class="form-label">Nama Mahasiswa</label>
+  <input type="text" class="form-control" id="nama" placeholder="Nama Mahasiswa" th:field="*{namaMahasiswa}">
+</div>
+
+<div class="mb-3">
+  <label for="jk" class="form-label">Jenis Kelamin</label>
+  <input type="text" class="form-control" id="jk" placeholder="Pria/Wanita"th:field="*{jenisKelamin}">
+</div>
+
+<div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input type="password" class="form-control" id="password" placeholder="Password" th:field="*{password}">
+</div>
+
+<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+
+</form>
+
+
+</body>
+</html>

@@ -25,18 +25,9 @@ import lombok.NoArgsConstructor;
 public class MataKuliah {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_matkul;
-	private String nama_matkul;
+	private long idMatkul;
+	private String namaMatkul;
 	
 	
-//	dari tabel Mahasiswa-Matkul
-	@ManyToMany(mappedBy = "matkul")
-	private List<Mahasiswa> mahasiswa = new ArrayList<Mahasiswa>();
-	
-	
-//	dari tabel Dosen-Matkul
-	@ManyToMany(mappedBy = "matkul")
-	private List<Dosen> dosen = new ArrayList<Dosen>();
-	
-	
+
 }

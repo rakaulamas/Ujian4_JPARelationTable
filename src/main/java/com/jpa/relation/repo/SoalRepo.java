@@ -6,4 +6,5 @@ import com.jpa.relation.entity.Soal;
 
 public interface SoalRepo extends JpaRepository<Soal, Long>{
 
+		public Soal findByNamaSoal(String nama);
 }

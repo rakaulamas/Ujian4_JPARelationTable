@@ -28,51 +28,13 @@ import lombok.NoArgsConstructor;
 public class Mahasiswa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long nim; 
+	private long idMahasiswa;
+	private String nim; 
 	private String password;
-	private String jenis_kelamin;
-	private String nama_mahasiswa;
-	public void setDosen(List<Dosen> listdosen) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setMatakuliah(List<MataKuliah> listmatakuliah) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-/*							Tabel Mahasiswa - Dosen
- 
- 
-  	@ManyToMany(cascade= CascadeType.ALL)
-	@JoinTable(
-			name="PlotMataKuliah",
-			joinColumns = { 
-					
-					@JoinColumn(name="npm", referencedColumnName="nim")},
-					
-			inverseJoinColumns= { 
-					@JoinColumn(name = "dosen_id", referencedColumnName="id_dosen")}	)
+	private String jenisKelamin;
+	private String namaMahasiswa;
 	
 		
-		private Set<Dosen> dosen = new HashSet<Dosen>();
-
-
 	
-/*						//Tabel Mahasiswa - Matkul
 	
-	@ManyToMany(cascade= CascadeType.ALL)
-	@JoinTable(
-			name="PlotMataKuliah",
-			joinColumns = { 
-					
-					@JoinColumn(name="npm", referencedColumnName="nim")},
-					
-			inverseJoinColumns= { 
-					@JoinColumn(name = "matkul_id", referencedColumnName="id_matkul")}	)
-	
-		
-		private Set<MataKuliah> matakuliah = new HashSet<MataKuliah>();
-
-	*/
 }
