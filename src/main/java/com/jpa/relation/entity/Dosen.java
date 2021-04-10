@@ -29,9 +29,9 @@ public class Dosen {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idDosen; 
+	private String namaDosen;
 	private String username;
 	private String password;
-	private String namaDosen;
 
 	
 	

@@ -39,7 +39,7 @@ public class MahasiswaPage {
 		// untuk menampung data mahasiswa di halaman html nya.
 		this.modelMahasiswa.addMahasiswa(mahasiswa);
 		model.addAttribute("listMahasiswa", modelMahasiswa.getAllMahasiswa());
-		return "view_mahasiswa";
+		return "redirect:/mahasiswa/view";
 	}
 	
 	@GetMapping("/mahasiswa/update/{id}")

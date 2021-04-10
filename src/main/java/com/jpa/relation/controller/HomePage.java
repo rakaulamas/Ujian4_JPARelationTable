@@ -14,11 +14,7 @@ import com.jpa.relation.services.ModelMahasiswa;
 @Controller
 public class HomePage {
 
-	@Autowired
-	ModelMahasiswa modelMahasiswa;
 	
-	@Autowired
-	MahasiswaRepo mahasiswaRepo; 
 	
 	
 	

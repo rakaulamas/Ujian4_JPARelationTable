@@ -28,11 +28,11 @@ import lombok.NoArgsConstructor;
 public class Mahasiswa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idMahasiswa;
-	private String nim; 
-	private String password;
-	private String jenisKelamin;
-	private String namaMahasiswa;
+	private long 	idMahasiswa;
+	private String 	nim; 
+	private String 	password;
+	private String 	jenisKelamin;
+	private String 	namaMahasiswa;
 	
 		
 	
