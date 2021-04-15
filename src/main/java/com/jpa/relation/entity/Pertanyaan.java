@@ -27,7 +27,7 @@ public class Pertanyaan {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id; 
 	
-	private String pertanyaan;
+	private String pertanyaan1;
 	private String jawaban1;
 	private String jawaban2;
 	private String jawaban3;
